@@ -1,0 +1,29 @@
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: calc(2em + 0.02vw);
+  font-weight: bold;
+  color: rgba(255,255,255,0.8);
+  font-family: 'Ubuntu', arial;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+
+.item-9 {
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 2;
+  /*grid-row: third-line / 4;*/
+}
+
+.item-22,
+.item-23 {
+  grid-column-end: span 2;
+  grid-row-end: span 2;
+}
+
+.item-24 {
+  grid-column: 1 / span 4;
+  grid-row-end: span 2;
+}
