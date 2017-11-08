@@ -7,7 +7,13 @@
   font-weight: bold;
   color: rgba(255,255,255,0.8);
   font-family: 'Ubuntu', arial;
-  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.item:hover,
+.item:focus {
+  background-color: rgba(255,255,255, 0.8);
+  color: red;
+  outline: 0;
 }
 
 
