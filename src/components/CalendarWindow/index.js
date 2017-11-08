@@ -4,9 +4,9 @@ import './style.css'
 
 class CalendarWindow extends Component {
   render() {
-    const day = this.props.index + 1;
+    const day = this.props.index;
     return (
-      <Link to={`/calendar/${day}`} className={`item item-${day}`} style={{ backgroundColor: `hsla(359, ${71 + (Math.random() * day)}%, ${39 + (Math.random() * day)}%, 1)`}}>{day}</Link>
+      <Link to={`/calendar/${day}`} className={`item item-${day}`} style={{/*{ backgroundColor: `hsla(359, ${71 + (Math.random() * day)}%, ${39 + (Math.random() * day)}%, 1)`} */}}>{day}</Link>
     )
   }
 }
