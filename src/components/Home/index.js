@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { data } from '../../data/'
-import { randomizer } from '../../services/randomizer'
+//import { randomizer } from '../../services/randomizer'
 import CalendarWindow from '../CalendarWindow'
 import './style.css'
 
@@ -9,7 +9,7 @@ class Home extends Component {
     return (
       <div className="item-container">
         {
-          randomizer(data).map((item, key) => <CalendarWindow heading={item.heading} text={item.text} key={key}  index={item.day} />)
+          data.map((item, key) => <CalendarWindow heading={item.heading} text={item.text} key={key}  index={item.day} />)
         }
       </div>
     )

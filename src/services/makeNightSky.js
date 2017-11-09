@@ -13,10 +13,12 @@ export function makeNightSky() {
 	  var randomOpacityOne = Math.floor((Math.random()*9)+1);
 	  var randomOpacityTwo = Math.floor((Math.random()*9)+1);
 	  var randomHue = Math.floor((Math.random()*360)+1);
-    if(randomSize>1) {
+
+		if(randomSize>1) {
       ctx.shadowBlur = Math.floor((Math.random()*15)+5);
       ctx.shadowColor = "white";
 	  }
+
     ctx.fillStyle = "hsla("+randomHue+", 30%, 80%, ."+randomOpacityOne+randomOpacityTwo+")";
 	  ctx.fillRect(randomX, randomY, randomSize, randomSize);
 	}

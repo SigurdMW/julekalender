@@ -1,5 +1,12 @@
 body {
   margin: 0;
   padding: 0;
+  height:100%;
   font-family: 'Roboto', serif;
+  color: rgba(255, 255, 255, 0.8);
+  color: #cccfd2;
+}
+
+body, body * {
+    box-sizing: border-box;
 }
