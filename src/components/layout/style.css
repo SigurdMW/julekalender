@@ -6,13 +6,18 @@
   flex-direction: column;
 }
 
-h1 {
+h1{
   font-family: "Lobster", serif;
   font-size: 5vw;
   text-align: center;
   margin: 0.25em 0 0.5em;
   /*text-shadow: 4px 4px 0 rgba(255, 255, 255, 0.3);*/
   font-weight: normal;
+}
+
+h1 > a {
+  text-decoration: none;
+  color: #cccfd2;
 }
 
 canvas {

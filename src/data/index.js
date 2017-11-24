@@ -1,7 +1,7 @@
 export const data = [
-  {day: 1, heading: "The magical first day", text:"some text", resourceURL: "http://vg.no"},
-  {day: 2, heading: "The magical first day", text:"some text", resourceURL: "http://vg.no"},
-  {day: 3, heading: "The magical first day", text:"some text", resourceURL: "http://vg.no"},
+  {day: 1, heading: "The magical first day", compliment:"some text"},
+  {day: 2, heading: "The magical first day", compliment:"some text"},
+  {day: 3, heading: "The magical first day", compliment:"some text"},
   {day: 4, heading: "", text: "", resourceURL: ""},
   {day: 5, heading: "", text: "", resourceURL: ""},
   {day: 6, heading: "", text: "", resourceURL: ""},
