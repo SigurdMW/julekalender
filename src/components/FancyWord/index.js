@@ -13,6 +13,7 @@ class FancyWord extends Component {
                   key={key}
                   className={`fancy-letter fancy-letter--${key}`}
                   style={{animationDelay: `${key * 0.1}s`}}
+                  data-transform={`${key * Math.random()}`}
                 >
                     {letter}
                 </span>)
