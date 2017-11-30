@@ -1,4 +1,6 @@
 export function makeNightSky() {
+	// https://codepen.io/jesswar/pen/JoQPxV
+	// https://codepen.io/jackrugile/pen/Gving?page=1&
 	var c = document.getElementById('sky');
 	var ctx = c.getContext('2d');
 	var xMax = c.width = window.screen.availWidth;
