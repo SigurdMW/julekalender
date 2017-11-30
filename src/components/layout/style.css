@@ -8,11 +8,17 @@
 
 h1 {
   font-family: "Lobster", serif;
-  font-size: 5vw;
+  font-size: 2rem;
   text-align: center;
   margin: 0.25em 0 0.5em;
   /*text-shadow: 4px 4px 0 rgba(255, 255, 255, 0.3);*/
   font-weight: normal;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 5vw;
+  }
 }
 
 h1 > a {

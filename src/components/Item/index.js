@@ -11,9 +11,7 @@ const Item = ({ match }) => {
   if(sneekGuard(match.params.day)){
     return (
       <div className="single-day-container">
-        <span style={{}}>Du er</span> <br />
-        <FancyWord word={dayData.heading}></FancyWord> 
-        <br/> jenta mi!
+         Du er <FancyWord word={dayData.heading}></FancyWord> jenta mi!
       </div>
     );
   }
