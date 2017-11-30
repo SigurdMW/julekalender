@@ -1,12 +1,12 @@
 .item {
-  font-size: 2rem;
+  font-size: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   background-color: rgba(0,0,0,.2);
   color: #cccfd2;
-  padding: 3em;
+  padding: 1.5em 0;
 }
 
 

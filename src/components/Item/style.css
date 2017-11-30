@@ -2,7 +2,6 @@
   max-width: 450px;
   width: 100%;
   margin: 0 auto;
-  font-size: 1.2em;
   padding-top: 1em;
 
   opacity: 0;
@@ -20,4 +19,10 @@
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+.text {
+  border-left: 3px solid #ffd700;
+  padding-left: 1em;
+  margin-top: 4em;
 }

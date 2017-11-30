@@ -1,7 +1,7 @@
 import React from 'react'
 
 const YouSneek = () => (
-  <div>
+  <div className="single-day-container">
     Det er lov å prøve seg...
   </div>
 )
