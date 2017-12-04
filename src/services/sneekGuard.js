@@ -4,8 +4,8 @@ export default function sneekGuard(requestedDay){
   let day = today.getDate();
 
   // for testing
-  // month = 12;
-  // day = 24;
+  month = 12;
+  day = 24;
 
   return (parseInt(requestedDay) > day || month !== 12)  ? false : true;
 }
