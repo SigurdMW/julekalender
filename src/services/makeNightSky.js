@@ -75,13 +75,18 @@ function createShootingStar(){
 	  return setTimeout(callback, 1);
 	};
 
+	
+
 	var square = {
 		'x': 50,
 		'y': 50,
-		'width': 100,
-		'height': 100,
-		'fill': '#ffffff'
+		'width': 30,
+		'height': 10
 	};
+
+	var grd = context.createLinearGradient(square.x, square.y, square.x + square.width, square.y);
+	grd.addColorStop(0, "white");
+	grd.addColorStop(1, "transparent");
 	
 	var render = function() {
 		// Clear the canvas
@@ -90,7 +95,7 @@ function createShootingStar(){
 		// Draw the square
 		context.beginPath();
 		context.rect(square.x, square.y, square.width, square.height);
-		context.fillStyle = square.fill;
+		context.fillStyle = grd;
 		context.fill();
 	
 		// Redraw
@@ -113,7 +118,8 @@ function createShootingStar(){
 		  var progress = Math.min((duration - (end - timestamp)) / duration, 1);
 	  
 		  // Update the square's property
-		  square[prop] = current + (distance * progress);
+		  //square[prop] = current + (distance * progress);
+		  context.translate(current + (distance * progress), square.y);
 	  
 		  // If the animation hasn't finished, repeat the step.
 		  if (progress < 1) requestAnimationFrame(step);
@@ -123,5 +129,5 @@ function createShootingStar(){
 		return step();
 	  };
 	  
-	  animate('x', 0, 1000);
+	  animate('x', 0, 10000);
 }
