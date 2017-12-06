@@ -1,26 +1,11 @@
 import React, { Component } from 'react'
 import sneekGuard from '../../services/sneekGuard'
 import FancyWord from '../FancyWord'
-import { fireworks } from '../../services/birthday'
 import YouSneek from './YouSneek'
 import { data } from '../../data'
 import "./style.css"
 
 class Item extends Component {
-  specialEffects(){
-    if(this.props.match.params.day === "9"){
-      fireworks();
-    }
-  }
-
-  componentDidMount(){
-    this.specialEffects();
-  }
-
-  componentWillUnmount(){
-    // remove special effects here
-  }
-
   render(){
     const dayData = data.filter(item => item.day === Number(this.props.match.params.day))[0];
 
