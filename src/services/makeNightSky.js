@@ -36,7 +36,7 @@ export function makeNightSky() {
 
 	// }, 2000);
 
-	createShootingStar();
+	//createShootingStar();
 }
 
 // function createShootingStar(ctx, xMax, yMax){

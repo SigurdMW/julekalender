@@ -7,5 +7,5 @@ export default function sneekGuard(requestedDay){
   // month = 12;
   // day = 24;
 
-  return (parseInt(requestedDay) > day || month !== 12)  ? false : true;
+  return (parseInt(requestedDay, 10) > day || month !== 12)  ? false : true;
 }
